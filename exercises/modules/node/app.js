@@ -26,6 +26,4 @@ const showUserProfile = (userId, cb) => {
     });
 };
 
-const app = { showPostsForCurrentUser, showUserProfile };
-
-module.exports = app;
+module.exports = { showPostsForCurrentUser, showUserProfile };

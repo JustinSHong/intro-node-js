@@ -5,9 +5,7 @@ const posts = [
     { title: "My doggy", body: "my dog is better than yours", createdBy: 1 }
 ];
 
-const data = {
+module.exports = {
     users,
     posts
 };
-
-module.exports = data;
