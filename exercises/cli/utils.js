@@ -21,7 +21,7 @@ const getContacts = () => {
  * @param {Object} contacts contacts object
  */
 const saveContacts = contacts => {
-    const json = JSON.stringify(contacts);
+    const json = JSON.stringify(contacts, null, 2);
     fs.writeFileSync(target, json, { encoding: "utf-8" });
 };
 
