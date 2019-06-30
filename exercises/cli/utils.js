@@ -22,7 +22,11 @@ const getContacts = () => {
  * and saves it at the @contactsLocation path
  * @param {Object} contacts contacts object
  */
-const saveContacts = contacts => {};
+const saveContacts = contacts => {
+    const target = path.join(__dirname, contactsLocation);
+    const json = JSON.stringify(contacts);
+    fs.writeFileSync(target, json, { encoding: "utf-8" });
+};
 
 module.exports = {
     contactsLocation,
